@@ -1,0 +1,26 @@
+<%- include('partials/header'); -%>
+
+<a href="/signup" class="btn new-admin"
+  >Add New Admin</a
+>
+<div class="parent">
+  <div class="user-container">
+    <% usersData.forEach((user)=>{%>
+    <div class="user">
+      <form class="user-form">
+        <div class="user-data">
+          <img src="/assets/user.png" alt="" />
+          <h6 class="user_id"><%= user._id%></h6>
+          <h3><%= user.user_name%></h3>
+          <h5><%= user.user_email%></h5>
+          <h5 class="message">
+            <%= user.user_message%>
+          </h5>
+        </div>
+      </form>
+    </div>
+    <% }) %>
+  </div>
+</div>
+
+<%- include('partials/footer'); -%>

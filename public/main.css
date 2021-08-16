@@ -1,0 +1,83 @@
+button {
+  cursor: pointer;
+}
+
+.new-admin {
+  position: absolute;
+  padding: 8px 12px;
+  top: 80px;
+  right: 30px;
+  font-size: 15px;
+}
+
+.parent {
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent .user-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 40px 20px;
+}
+
+.parent .user-container .user {
+  display: flex;
+  border: 2px solid black;
+  width: 220px;
+  height: 200px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.parent .user-container .user .user-form {
+  padding: 0px;
+}
+
+.parent .user-container .user .user-form .user-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.parent .user-container .user .user-form .user-data img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  left: 10%;
+}
+
+.parent .user-container .user .user-form .user-data .user_id {
+  font-size: 5px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.parent .user-container .user .user-form .user-data h3 {
+  text-align: left;
+  margin: 20px 12px 0px 12px;
+  padding: 8px 12px;
+  font-size: 20px;
+}
+
+.parent .user-container .user .user-form .user-data h5 {
+  margin: 4px 12px;
+  font-size: 10px;
+  width: 150px;
+}
+
+.parent .user-container .user .user-form .user-data .message {
+  margin: 4px 12px;
+  font-size: 15px;
+  width: 190px;
+}
+/*# sourceMappingURL=main.css.map */
